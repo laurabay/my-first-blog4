@@ -1,11 +1,12 @@
 from django.db import models
 from django.utils import timezone
 
+
 class Post(models.Model):
         author = models.ForeignKey('auth.User')
-        title = models.CharField(max_length=200)
+        titulo = models.CharField(max_length=200)
         autor = models.CharField(max_length=200)
-        fecha = models.CharField(max_length=200)
+        genero = models.CharField(max_length=200)
         editorial = models.CharField(max_length=200)
         paginas = models.CharField(max_length=200)
         imagen = models.CharField(max_length=500)
@@ -20,4 +21,6 @@ class Post(models.Model):
             self.save()
 
         def __str__(self):
-            return self.title
+            return self.titulo
+
+       
