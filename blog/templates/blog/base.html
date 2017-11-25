@@ -1,23 +1,40 @@
 {% load staticfiles %}
     <html>
         <head>
-            <title>Django Girls blog</title>
+            <title>Libros Blog's</title>
             <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
             <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
             <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
             <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+            <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/js/uikit-icons.min.js"></script>
         </head>
         <body>
             <div class="page-header">
-            <h1><a href="/">Django Girls Blog</a></h1>
+             <h1 class="titulo-principal"><a href="/">Libros Blo'g</a></h1>
+            
         </div>
+
+
+
         <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
+        <a href="{% url 'post_new' %}" class="top-menu boton-agregar"><span class="glyphicon glyphicon-plus"></span></a>
+            <div class="row div-row" uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 300; repeat: true">
+                
                 {% block content %}
                 {% endblock %}
                 </div>
-            </div>
         </div>
         </body>
+         <br>
+         <div class="footer-copyright">
+        <div class="container-fluid">
+            © 2017 Copyright - Lauraabaay </a>
+
+        </div>
+    </div>
     </html>

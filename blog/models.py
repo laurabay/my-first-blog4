@@ -8,8 +8,8 @@ class Post(models.Model):
         autor = models.CharField(max_length=200)
         genero = models.CharField(max_length=200)
         editorial = models.CharField(max_length=200)
-        paginas = models.CharField(max_length=200)
-        imagen = models.CharField(max_length=500)
+        fecha_publicacion = models.CharField(max_length=200)
+        imagen = models.ImageField(upload_to='photos/')
         sinopsis = models.TextField()
         created_date = models.DateTimeField(
                 default=timezone.now)

@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Nunito:400,400i,600,600i,700,700i');
 
     h1 a {
         color: #FCA205;
-        font-family: 'Lobster';
+        font-family: 'Nunito', sans-serif;
+
     }
     .page-header {
-        background-color: #ff9400;
+      height: 130px;
         margin-top: 0;
         padding: 20px 20px 20px 40px;
-    }
+        background-image: url('./imagenes/imagen1.png');
+            }
 
     .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
         color: #ffffff;
@@ -37,16 +40,130 @@
     }
 
     .top-menu, .top-menu:hover, .top-menu:visited {
-        color: #ffffff;
+        color:  #ffffff;
         float: right;
         font-size: 26pt;
         margin-right: 20px;
     }
 
     .post {
-        margin-bottom: 70px;
+        margin-bottom: 70px !important;
     }
 
     .post h1 a, .post h1 a:visited {
         color: #000000;
     }
+    .boton-agregar{
+    	font-size: 30px;
+width: 40px;
+height: 40px;
+line-height: 40px;
+padding: 0px;
+text-align: center;
+border-radius: 100px;
+position: fixed;
+right: 15px;
+bottom: 55px;
+background-color: #b435aa;
+    }
+    .imagen-libros{
+    	width: 95% !important;
+    }
+
+    .titulos-libros{
+    	font-family: 'Nunito', sans-serif;
+    	font-size: 20px;
+    	margin: 0px;
+    	padding: 0px;
+    	color: black !important;
+    	font-weight: 900;
+    }
+    .autor-libros, .fecha-libros{
+    	font-family: 'Nunito', sans-serif;
+    	font-weight: 900;
+    	margin: 0px;
+    	color: black !important;
+    }
+
+  .div-row{
+  	 margin-left: calc(50% - 500px);
+  }
+   .div-contenido{
+   	text-align: center;
+   	line-height: 20px !important;
+   }
+   .titulo-principal a{
+   	font-family: 'Indie Flower', cursive;
+   	color: #b435aa !important ;
+   	font-size: 50px !important;
+   line-height: 100px;
+   }
+
+   .autor-detalles,.editorial-detalles{
+   	background-color: #cf96ce !important;
+   	height: 100px;
+   	font-size: 17px;
+   	font-family: 'Nunito', sans-serif;
+   	color: black;
+   	} 
+   	.genero-detalles{
+   		background-color:  #8b358f !important;
+   		height: 100px;
+   		font-size: 17px;
+   		font-family: 'Nunito', sans-serif;
+   		color: black;
+   	}
+   	.sinopsis-detalles{
+   		text-align: justify;
+   		color:black;
+   		font-family: 'Nunito', sans-serif;
+   		font-size: 18px;
+   		line-height: 28px;
+
+   	}
+   	.titulo-detalles, .nuevo-libro{
+   		color:black;
+   		font-family: 'Nunito', sans-serif !important;
+   	}
+   	.save{
+   		background: #841783;
+color: white;
+   	}
+   	.formulario{
+   		color:black;
+   		font-family: 'Nunito', sans-serif !important;
+   	}
+   	.uk-overlay-primary {
+    background: rgba(233, 221, 236, 0.74) !important;
+}
+
+.uk-overlay {
+    padding: 10px 10px !important;
+    text-align: center !important;
+}
+
+.uk-overlar h1,.uk-overlar h5{
+color: white !important;
+font-family: 'Nunito', sans-serif !important;
+}
+
+
+.container-fluid{
+	padding: 10px;
+text-align: center;
+background-color: blueviolet;
+color: white;
+font-size: 15px;
+font-family: 'Nunito', sans-serif !important;
+background-color: #b435aa;
+}
+
+.nuevo-libro, .titulo-detalles{
+	text-align: center;
+	font-family: 'Nunito', sans-serif !important;
+color: #b435aa;
+
+}
+.imagen-libros:hover{
+	width: 100% !important;
+}

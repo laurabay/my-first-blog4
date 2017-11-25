@@ -1,15 +1,33 @@
+
 {% extends 'blog/base.html' %}
 
     {% block content %}
+<ul class="uk-grid">
         {% for post in posts %}
-            <div class="post">
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-                <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.titulo }}</a></h1>
-                <p>{{ post.sinopsis|linebreaksbr }}</p>
+      
+
+       <li class="uk-width-1-4 post " >
+           
+                <div class="uk-inline" >
+          <img class="imagen-libros uk-animation-fade"  src=".{{ post.imagen.url }} ">
+            <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+              <h1 class="titulos-libros"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.titulo }}</a></h1>
+                <h5 class="autor-libros">{{ post.autor}} </h5>
+                <h5 class="fecha-libros">{{ post.fecha_publicacion}} </h1>
             </div>
+        </div>
+               
+            
+          
+                
+                
+               
+          
+           
+ 
+       </li>
         {% endfor %}
+       </ul>
     {% endblock %}
 
    
